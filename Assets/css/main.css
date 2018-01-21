@@ -3,8 +3,7 @@ body
     font-family: 'Quicksand', sans-serif;
     color:black;
     font-size: 16px;
-    margin-right: 10%;
-    margin-left: 10%;
+    line-height: 22px;
 }
 ul{
   list-style: none;
@@ -14,19 +13,24 @@ a{
 }
 /* header */
 header{
-   position: fixed;
-   z-index: 100;
+    position: fixed;
+    z-index: 100;
     height: 70px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+header .container{
+  padding-left: 110px;
+  padding-right: 110px;
+  position:relative;
+}
 header ul{
 
   margin: 0 auto;
-   margin-top: 28px;
+   margin-top: 25px;
    list-style: none;
    float: right;
-   margin-right: 8%;
+  
 }
 header ul li{
     float: left;
@@ -39,30 +43,37 @@ header ul li a{
 }
 header ul li a:hover{
     color: #a2c73c;
+  
 }
 #header-logo{
-    position:relative;
-    margin-top: 2%;
-    margin-left: 8%;
+   
+    margin-top: 30px;
+  
 }
 header::after{content: ""; 
     position: absolute; 
-    top: 100%; 
-    left:  6%; 
+    top: 70px; 
+    left:  80px; 
     border-top: 54px solid rgba(0, 0, 0, 0.5); 
     border-right: 123px solid rgba(0, 0, 0, 0.5); 
-    border-bottom-left-radius: 20px; 
-    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
     z-index: -1;   
 }
 #signup{
   height: 30px;
   width: 80px;
   margin-top: -10px;
- padding-top: 10px;
+  padding-top: 10px;
   padding-left: 20px;
   background-color: #a2c73c;
+  color:white;
   border-radius: 40px;
+}
+#signup:hover{
+ color:#a2c73c;
+ background-color: white;
+
 }
 /* section 1 */
 .section1{
@@ -72,21 +83,20 @@ header::after{content: "";
     height: 700px;
     text-align: center;
 }
-
-.section1 img{
-  margin-top: 150px;
+.section1 .container{
+  margin-left: 110px;
+  margin-right: 110px;
+  padding-top: 150px;
 }
 .section1 h1 {
   
   text-decoration: none;
   color:white;
   font-size: 50px;
- 
-  margin-top: 40px;
+  padding-top: 30px;
   font-weight:900;
 }
 #button1{
-
   margin: 0 auto;
   height: 60px;
   width:560px;
@@ -101,11 +111,12 @@ header::after{content: "";
   border-width: 0px;
  
 }
-.section2{
- 
-  margin: 0 auto;
-  margin-top:110px;
-  margin-bottom: 110px;
+
+.section2 .container{
+ margin-left: 110px;
+ margin-right: 110px;
+  padding-top:110px;
+  padding-bottom:110px;
   text-align: center;
 }
 .section2 .container div div{
@@ -118,9 +129,15 @@ header::after{content: "";
 }
 .discover{
   position: absolute;
+  text-decoration: none;
+  font-weight: bolder;
   bottom: 0;
-  margin-left: 90px;
-  padding-bottom: 20px;
+  margin-left: 70px;
+  padding-bottom: 10px;
+}
+.discover a{
+ 
+  color: black;
 }
 .discover::after{
   content: "\00BB";
@@ -128,19 +145,71 @@ header::after{content: "";
 
 }
 #mid{
-  padding-top:25%;
-
+  padding-top: 80px;
+  padding-bottom: 20px;
+  
   height: 50px;
   width: 50px; 
 } 
+
+#hiddenB{
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 200px;
+  top: 140px;
+  left: 180px;
+}
 .section2 .container{
+  margin-left: 110px;
+  margin-right: 110px;
   height: 800px;
   width: 800px;
   margin: 0 auto;
 }
-.section2 .line1 div{
+.section2 .container .title{
+  padding-top:25px;
+}
+.section2 .container .product{
+  color:#656161;
+  padding-top:5px
+}
+.section2 .container .price{
+  color:white;
+  padding-top:25px;
+}
+#line1block1{
+  background-color: #a2c73c;
+}
+#line1block3{
+  background-color: #075daa;
+}
+#line2block2{
+ font-weight: bold;
+}
+#line3block1{
+  background-color: #4494d1;
+}
+#line3block3{
+  background-color: #0eb049;
+}
+#midtext1{
+  color:#656161;
+  font-style: italic;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section2 .container div div p{
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+.section2 #line1 div{
   height: 266px;
   width: 266px;
+   
  float: left;
 }
 .section2 .line2 div{
@@ -163,21 +232,23 @@ header::after{content: "";
   color: white;
   text-align: center;
 }
+.section3 .container{
+  position: relative;
+  margin-left: 110px;
+  margin-right: 110px;
+}
 .section3 h1{
   padding-top: 88px;
   margin-bottom: 50px;
 }
 .section3 div p{
-  margin-right: 10%;
-  margin-left: 10%;
+
   font-size: 20px;
 }
 .section3 .text{
   margin-bottom: 50px;
 }
 .section3 #button2{
-  position: relative;
-  margin: 0 auto;
   height: 60px;
   width:560px;
   border-radius: 30px;
@@ -196,24 +267,30 @@ header::after{content: "";
   
   text-align: center;
 }
-.section4 .footergrid{
-  margin-right: 10%;
-  margin-left: 10%;
-  width: 1200px;
-  margin: 0 auto;
-}
-.section4 .footergrid div{
-  width: 370px;
-  height: 440px;
-  display: inline-block;
+.section4 .container{
+  margin-right: 110px;
+  margin-left: 110px;
  
+  padding-bottom: 60px;
+}
+.section4 .container div{
+  width: 370px;
+  display: inline-block;
+  padding-top: 40px;
+ 
+  
+ 
+}
+.fgheader{
+  margin-top:45px;
+  margin-bottom:20px;
 }
 .section4 div{
   position: relative;
 }
 #whitebutton{
  
-  margin-top: 100px;;
+  margin-top: 100px;
   padding: 0;
   
 
