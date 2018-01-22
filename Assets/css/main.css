@@ -14,19 +14,19 @@ a{
 /* header */
 header{
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     height: 70px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 header .container{
-  padding-left: 110px;
-  padding-right: 110px;
+  width:1100px;
+  margin: 0 auto;
   position:relative;
 }
 header ul{
 
-  margin: 0 auto;
+ 
    margin-top: 25px;
    list-style: none;
    float: right;
@@ -48,12 +48,13 @@ header ul li a:hover{
 #header-logo{
    
     margin-top: 30px;
-  
+    
 }
-header::after{content: ""; 
+header .container::after{
+    content: ""; 
     position: absolute; 
-    top: 70px; 
-    left:  80px; 
+    top: 70px;
+    left: -25px;
     border-top: 54px solid rgba(0, 0, 0, 0.5); 
     border-right: 123px solid rgba(0, 0, 0, 0.5); 
     border-bottom-left-radius: 15px; 
@@ -84,8 +85,9 @@ header::after{content: "";
     text-align: center;
 }
 .section1 .container{
-  margin-left: 110px;
-  margin-right: 110px;
+  width:1100px;
+  margin: 0 auto;
+  position:relative;
   padding-top: 150px;
 }
 .section1 h1 {
@@ -113,11 +115,13 @@ header::after{content: "";
 }
 
 .section2 .container{
- margin-left: 110px;
- margin-right: 110px;
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
   padding-top:110px;
   padding-bottom:110px;
   text-align: center;
+ 
 }
 .section2 .container div div{
   position: relative;
@@ -161,13 +165,7 @@ header::after{content: "";
   top: 140px;
   left: 180px;
 }
-.section2 .container{
-  margin-left: 110px;
-  margin-right: 110px;
-  height: 800px;
-  width: 800px;
-  margin: 0 auto;
-}
+
 .section2 .container .title{
   padding-top:25px;
 }
@@ -182,8 +180,29 @@ header::after{content: "";
 #line1block1{
   background-color: #a2c73c;
 }
+#line1block1::after{
+  content: "";
+  position: absolute;
+  float: right;
+  top: 37%;
+  right: -11%;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 29px solid #a2c73c;
+  z-index: 100;
+}
 #line1block3{
   background-color: #075daa;
+}
+#line1block3::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 33%;
+  border-top: 38px solid #075daa;
+  border-right: 45px solid transparent;
+  border-left: 45px solid transparent;
+  z-index: 100;
 }
 #line2block2{
  font-weight: bold;
@@ -191,8 +210,30 @@ header::after{content: "";
 #line3block1{
   background-color: #4494d1;
 }
+#line3block1::after{
+  content: "";
+  position: absolute;
+  float: right;
+  top: -14%;
+  right: 33%;
+  border-right: 45px solid transparent;
+  border-left: 45px solid transparent;
+  border-bottom: 38px solid #4494d1;
+  z-index: 100;
+}
 #line3block3{
   background-color: #0eb049;
+}
+#line3block3::after{
+  content: "";
+  position: absolute;
+  float: left;
+  top: 34%;
+  right: 100%;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-right: 34px solid #0eb049;
+  z-index: 100;
 }
 #midtext1{
   color:#656161;
@@ -233,9 +274,9 @@ header::after{content: "";
   text-align: center;
 }
 .section3 .container{
-  position: relative;
-  margin-left: 110px;
-  margin-right: 110px;
+  width:1100px;
+  margin: 0 auto;
+  position:relative;
 }
 .section3 h1{
   padding-top: 88px;
@@ -268,25 +309,23 @@ header::after{content: "";
   text-align: center;
 }
 .section4 .container{
-  margin-right: 110px;
-  margin-left: 110px;
- 
-  padding-bottom: 60px;
+  width:1200px;
+  margin: 0 auto;
+  position:relative;
+  padding-bottom: 90px;
 }
 .section4 .container div{
   width: 370px;
   display: inline-block;
   padding-top: 40px;
- 
-  
- 
+  padding-left:20px;
 }
 .fgheader{
   margin-top:45px;
   margin-bottom:20px;
 }
 .section4 div{
-  position: relative;
+  
 }
 #whitebutton{
  
@@ -316,6 +355,12 @@ footer{
   background-color: #0f151a;
   text-align: center;
 }
+footer .container{
+  width:1100px;
+  margin: 0 auto;
+  position:relative;
+}
+
 footer .part1{
   
  
