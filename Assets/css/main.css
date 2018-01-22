@@ -113,7 +113,11 @@ header .container::after{
   border-width: 0px;
  
 }
-
+#button1:hover{
+  color:#a2c73c;
+  background-color: white;
+ 
+ }
 .section2 .container{
   height: 800px;
   width: 800px;
@@ -301,6 +305,11 @@ header .container::after{
   border-width: 0px;
  
 }
+.section3 #button2:hover{
+  color:#a2c73c;
+  background-color: white;
+ 
+ }
 .section3 .button2{
   margin-bottom: 90px;
 }
@@ -309,13 +318,13 @@ header .container::after{
   text-align: center;
 }
 .section4 .container{
-  width:1200px;
+  width:1100px;
   margin: 0 auto;
   position:relative;
   padding-bottom: 90px;
 }
 .section4 .container div{
-  width: 370px;
+  width: 340px;
   display: inline-block;
   padding-top: 40px;
   padding-left:20px;
@@ -329,9 +338,8 @@ header .container::after{
 }
 #whitebutton{
  
-  margin-top: 100px;
+  margin-top: 70px;
   padding: 0;
-  
 
 }
 .whitebutton {
@@ -350,7 +358,10 @@ header .container::after{
   border-width: 2px;
   border-radius: 30px;
 }
-
+.whitebutton:hover{
+  background-color:#a2c73c;
+ 
+ }
 footer{
   background-color: #0f151a;
   text-align: center;
