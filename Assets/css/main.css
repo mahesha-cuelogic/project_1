@@ -162,8 +162,7 @@ header .container::after{
 
 #hiddenB{
   position: absolute;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
+ font-family: 'Rokkitt', serif;
   color: rgba(0, 0, 0, 0.2);
   font-size: 200px;
   top: 140px;
